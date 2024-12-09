@@ -1,5 +1,6 @@
 {
- "values": [
- "example:loop"
- ]
+    "values": 
+    [
+        "datapack_copado:tick"
+    ]
 }
