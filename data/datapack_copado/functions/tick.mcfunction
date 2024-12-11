@@ -56,16 +56,6 @@ execute as @a[nbt={Inventory:[{Slot:100b,tag:{Trim:{material:"minecraft:copper"}
 
 
 
-execute as @a run mine_and_slash stat remove @s exact amethyst_head
-execute as @a run mine_and_slash stat remove @s exact amethyst_chestplate
-execute as @a run mine_and_slash stat remove @s exact amethyst_leggings
-execute as @a run mine_and_slash stat remove @s exact amethyst_feet
-
-execute as @a[nbt={Inventory:[{Slot:103b,tag:{Trim:{material:"minecraft:amethyst"}}}]}] run mine_and_slash stat give @s exact intelligence PERCENT amethyst_head 20 true
-execute as @a[nbt={Inventory:[{Slot:102b,tag:{Trim:{material:"minecraft:amethyst"}}}]}] run mine_and_slash stat give @s exact intelligence PERCENT amethyst_chestplate 20 true
-execute as @a[nbt={Inventory:[{Slot:101b,tag:{Trim:{material:"minecraft:amethyst"}}}]}] run mine_and_slash stat give @s exact intelligence PERCENT amethyst_leggings 20 true
-execute as @a[nbt={Inventory:[{Slot:100b,tag:{Trim:{material:"minecraft:amethyst"}}}]}] run mine_and_slash stat give @s exact intelligence PERCENT amethyst_feet 20 true
-
 
 
 
