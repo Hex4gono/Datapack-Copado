@@ -5,7 +5,6 @@
 #execute as @a[nbt={Inventory:[{Slot:103b,id:"minecraft:leather_helmet"}]}] run attribute @s minecraft:generic.movement_speed modifier add 00000000-0000-A000-B000-000000000000 "leather bonus" 0.10 add
 #execute as @a[nbt={Inventory:[{Slot:103b,id:"minecraft:leather_helmet"},{Slot:102b, id:"minecraft:leather_chestplate"},{Slot:101b, id:"minecraft:leather_leggings"},{Slot:100b, id:"minecraft:leather_boots"}]}] run effect give @s speed 1 0 true
 
-say la mama de bautista rossi
 
 
 execute as @a run attribute @s generic.attack_speed modifier remove 10000000-0000-A000-B000-000000000000
