@@ -52,6 +52,23 @@ execute as @a[nbt={Inventory:[{Slot:102b,tag:{Trim:{material:"minecraft:copper"}
 execute as @a[nbt={Inventory:[{Slot:101b,tag:{Trim:{material:"minecraft:copper"}}}]}] run attribute @s forge:block_reach modifier add 52000000-0000-A000-B000-000000000000 "copper bonus" 0.325 add
 execute as @a[nbt={Inventory:[{Slot:100b,tag:{Trim:{material:"minecraft:copper"}}}]}] run attribute @s forge:block_reach modifier add 53000000-0000-A000-B000-000000000000 "copper bonus" 0.325 add
 
+execute as @a run attribute @s minecraft:generic.armor_toughness modifier remove 60000000-0000-A000-B000-000000000000
+execute as @a run attribute @s minecraft:generic.armor_toughness modifier remove 61000000-0000-A000-B000-000000000000
+execute as @a run attribute @s minecraft:generic.armor_toughness modifier remove 62000000-0000-A000-B000-000000000000
+execute as @a run attribute @s minecraft:generic.armor_toughness modifier remove 63000000-0000-A000-B000-000000000000
+execute as @a[nbt={Inventory:[{Slot:103b,tag:{Trim:{material:"minecraft:diamond"}}}]}] run attribute @s minecraft:generic.armor_toughness modifier add 60000000-0000-A000-B000-000000000000 "diamond bonus" 1.125 multiply_base
+execute as @a[nbt={Inventory:[{Slot:102b,tag:{Trim:{material:"minecraft:diamond"}}}]}] run attribute @s minecraft:generic.armor_toughness modifier add 61000000-0000-A000-B000-000000000000 "diamond bonus" 1.125 multiply_base
+execute as @a[nbt={Inventory:[{Slot:101b,tag:{Trim:{material:"minecraft:diamond"}}}]}] run attribute @s minecraft:generic.armor_toughness modifier add 62000000-0000-A000-B000-000000000000 "diamond bonus" 1.125 multiply_base
+execute as @a[nbt={Inventory:[{Slot:100b,tag:{Trim:{material:"minecraft:diamond"}}}]}] run attribute @s minecraft:generic.armor_toughness modifier add 63000000-0000-A000-B000-000000000000 "diamond bonus" 1.125 multiply_base
+
+execute as @a run attribute @s minecraft:generic.armor modifier remove 70000000-0000-A000-B000-000000000000
+execute as @a run attribute @s minecraft:generic.armor modifier remove 71000000-0000-A000-B000-000000000000
+execute as @a run attribute @s minecraft:generic.armor modifier remove 72000000-0000-A000-B000-000000000000
+execute as @a run attribute @s minecraft:generic.armor modifier remove 73000000-0000-A000-B000-000000000000
+execute as @a[nbt={Inventory:[{Slot:103b,tag:{Trim:{material:"minecraft:netherite"}}}]}] run attribute @s minecraft:generic.armor modifier add 60000000-0000-A000-B000-000000000000 "netherite bonus" 1.125 multiply_base
+execute as @a[nbt={Inventory:[{Slot:102b,tag:{Trim:{material:"minecraft:netherite"}}}]}] run attribute @s minecraft:generic.armor modifier add 61000000-0000-A000-B000-000000000000 "netherite bonus" 1.125 multiply_base
+execute as @a[nbt={Inventory:[{Slot:101b,tag:{Trim:{material:"minecraft:netherite"}}}]}] run attribute @s minecraft:generic.armor modifier add 62000000-0000-A000-B000-000000000000 "netherite bonus" 1.125 multiply_base
+execute as @a[nbt={Inventory:[{Slot:100b,tag:{Trim:{material:"minecraft:netherite"}}}]}] run attribute @s minecraft:generic.armor modifier add 63000000-0000-A000-B000-000000000000 "netherite bonus" 1.125 multiply_base
 
 
 
@@ -65,11 +82,27 @@ execute as @a[nbt={Inventory:[{Slot:102b,tag:{Trim:{material:"minecraft:amethyst
 execute as @a[nbt={Inventory:[{Slot:101b,tag:{Trim:{material:"minecraft:amethyst"}}}]}] run mine_and_slash stat give @s exact intelligence PERCENT amethyst_leggings 12.5 true
 execute as @a[nbt={Inventory:[{Slot:100b,tag:{Trim:{material:"minecraft:amethyst"}}}]}] run mine_and_slash stat give @s exact intelligence PERCENT amethyst_feet 12.5 true
 
-execute as @a[nbt={Inventory:[{Slot:103b,id:"minecraft:golden_helmet"},{Slot:102b, id:"minecraft:golden_chestplate"},{Slot:101b, id:"minecraft:golden_leggings"},{Slot:100b, id:"minecraft:golden_boots"}]}] run mine_and_slash stat give @s exact cast_speed PERCENT gold_set_bonus 50 true
+execute as @a[nbt={Inventory:[{Slot:103b,id:"minecraft:golden_helmet"},{Slot:102b, id:"minecraft:golden_chestplate"},{Slot:101b, id:"minecraft:golden_leggings"},{Slot:100b, id:"minecraft:golden_boots"}]}] run mine_and_slash stat give @s exact cdr PERCENT gold_set_bonus 50 true
 
+execute as @a run mine_and_slash stat remove @s exact quartz_head
+execute as @a run mine_and_slash stat remove @s exact quartz_chestplate
+execute as @a run mine_and_slash stat remove @s exact quartz_leggings
+execute as @a run mine_and_slash stat remove @s exact quartz_feet
 
+execute as @a[nbt={Inventory:[{Slot:103b,tag:{Trim:{material:"minecraft:quartz"}}}]}] run mine_and_slash stat give @s exact strength PERCENT quartz_head 12.5 true
+execute as @a[nbt={Inventory:[{Slot:102b,tag:{Trim:{material:"minecraft:quartz"}}}]}] run mine_and_slash stat give @s exact strength PERCENT quartz_chestplate 12.5 true
+execute as @a[nbt={Inventory:[{Slot:101b,tag:{Trim:{material:"minecraft:quartz"}}}]}] run mine_and_slash stat give @s exact strength PERCENT quartz_leggings 12.5 true
+execute as @a[nbt={Inventory:[{Slot:100b,tag:{Trim:{material:"minecraft:quartz"}}}]}] run mine_and_slash stat give @s exact strength PERCENT quartz_feet 12.5 true
 
+execute as @a run mine_and_slash stat remove @s exact emerald_head
+execute as @a run mine_and_slash stat remove @s exact emerald_chestplate
+execute as @a run mine_and_slash stat remove @s exact emerald_leggings
+execute as @a run mine_and_slash stat remove @s exact emerald_feet
 
+execute as @a[nbt={Inventory:[{Slot:103b,tag:{Trim:{material:"minecraft:emerald"}}}]}] run mine_and_slash stat give @s exact dexterity PERCENT emerald_head 12.5 true
+execute as @a[nbt={Inventory:[{Slot:102b,tag:{Trim:{material:"minecraft:emerald"}}}]}] run mine_and_slash stat give @s exact dexterity PERCENT emerald_chestplate 12.5 true
+execute as @a[nbt={Inventory:[{Slot:101b,tag:{Trim:{material:"minecraft:emerald"}}}]}] run mine_and_slash stat give @s exact dexterity PERCENT emerald_leggings 12.5 true
+execute as @a[nbt={Inventory:[{Slot:100b,tag:{Trim:{material:"minecraft:emerald"}}}]}] run mine_and_slash stat give @s exact dexterity PERCENT emerald_feet 12.5 true
 
 
 
